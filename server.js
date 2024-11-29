@@ -5,10 +5,10 @@ const axios = require('axios');
 const app = express();
 
 app.use(bodyParser.json());
-app.use(express.static('public')); // Serve static frontend files
+app.use(express.static('public')); 
 
-const OPENAI_API_KEY = 'tpsg-7JxYIqr3tGlpZ0R1RLPlZ9chi0rS1L5';
-const OPENAI_API_BASE = 'https://api.metisai.ir/openai/v1';
+const OPENAI_API_KEY = 'YOUR_API_KEY';
+const OPENAI_API_BASE = 'YOUR_API_URL';
 
 app.post('/api/check-grammar', async (req, res) => {
     const { text } = req.body;
